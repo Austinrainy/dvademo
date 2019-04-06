@@ -1,0 +1,41 @@
+.top0{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    z-index: 110;
+    right: 0;
+    top: 0;
+}
+
+
+.top1{
+    width: 64px;
+    height: 64px;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.top1 img{
+    width:100%;
+}
+.top2{
+    position: absolute; 
+    top:0;
+    right:0;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+    overflow: hidden;
+    clip-path: polygon(36% 0%, 100% 0%, 100% 64%);
+}
+
+.top0:hover .top2
+{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+}
+.top0:hover .top1
+{
+    width: 100px;
+    height: 100px;
+}
